@@ -20,3 +20,50 @@ To install AstralRouter, follow these steps:
 
    ```shell
    npm install astral-router
+
+2. Import AstralRouter into your project:
+
+```shell
+import { Astral, AstralRoute, AstralLink } from 'astral-router';
+
+3. Start using AstralRouter in your application:
+
+## Usage Example
+
+Here's a basic example of how you can use AstralRouter in your application:
+```shell 
+
+import { Astral, AstralRoute, AstralLink } from 'astral-router';
+
+function App() {
+  return (
+    <Astral>
+      <nav>
+        <ul>
+          <li>
+            <AstralLink to="/">Home</AstralLink>
+          </li>
+          <li>
+            <AstralLink to="/about">About</AstralLink>
+          </li>
+          <li>
+            <AstralLink to="/contact">Contact</AstralLink>
+          </li>
+        </ul>
+      </nav>
+
+      <AstralRoute path="/" exact>
+        <Home />
+      </AstralRoute>
+      <AstralRoute path="/about">
+        <About />
+      </AstralRoute>
+      <AstralRoute path="/contact">
+        <Contact />
+      </AstralRoute>
+    </Astral>
+  );
+}
+
+
+
