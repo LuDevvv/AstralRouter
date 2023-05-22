@@ -1,4 +1,4 @@
-# AstralRouter
+# AstralRouter 🌌
 
 AstralRouter is a powerful routing library inspired by React Router. Designed for modern web applications, AstralRouter provides an efficient and flexible solution for managing navigation in your React application.
 
